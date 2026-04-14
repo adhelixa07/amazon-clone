@@ -1,5 +1,8 @@
 # Amazon Clone
 
+## Live link
+https://adhelixa07.github.io/amazon-clone/
+
 ## Description
 this is a simple frontend project built using HTML and CSS
 
