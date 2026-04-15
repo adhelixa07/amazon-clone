@@ -1,18 +1,24 @@
 *{
    margin: 0;
-   border: border-box;
+   box-sizing: border-box;
    font-family: Arial, Helvetica, sans-serif;
 
 }
 
 .navbar{
    background-color: #0f1111;
-   height: 60px;
+   min-height: 60px;
+   padding: 10px 0;
    color: beige;
    display: flex;
-   justify-content: space-evenly;
+   justify-content: space-between;
+   gap: 10px;
    align-items: center;
-   
+   flex-wrap: wrap;
+}
+
+.navbar > div {
+  flex: 0 1 auto;
 }
 
 /* box1 */
@@ -203,14 +209,18 @@ span{
    background-size: cover;
    background-position: center;
    margin-top: 1rem;
-   margin-bottom: 1rem;
+   margin-bottom: 0.5rem;
    
 }
 .box-content{
    margin-left: 10px;
    margin-right: 10px;
+   margin-bottom: 14px;
 }
 .box-content p{
+   margin-top: 8px;
+   margin-bottom: 0;
+   font-size: 0.7rem;
    color: #007185;
 }
 
@@ -280,4 +290,58 @@ ul a{
 
 a:hover{
    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+   header {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+   }
+
+   nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 0;
+   }
+
+   .heroSection {
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 250px;
+   }
+
+   .shop-section {
+      justify-content: center;
+      gap: 10px;
+   }
+
+   .box {
+      width: 100%;
+      height: auto;
+      min-height: 220px;
+   }
+
+   .box-img {
+      height: 140px;
+   }
+
+   .box-content {
+      margin-left: 8px;
+      margin-right: 8px;
+   }
+
+   .box-content p,
+   .box-content a {
+      font-size: 0.8rem;
+   }
+
+   .footer1 {
+      text-align: center;
+      padding: 15px 10px;
+      word-wrap: break-word;
+   }
 }
